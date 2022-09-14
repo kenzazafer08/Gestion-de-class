@@ -24,45 +24,19 @@ void main(){
         printf ("Nom : ");
         scanf ("%s", tab[i].name);
         printf ("Age : ");
-        scanf ("%d", tab[i].age);
+        scanf ("%d", &tab[i].age);
         printf ("Niveaux : ");
         scanf ("%s", tab[i].niveaux);
         printf ("Date de naissance : \n");
         printf ("Jour : ");
-        scanf ("%d", tab[i].date.jour);
+        scanf ("%d", &tab[i].date.jour);
         printf ("Mois : ");
-        scanf ("%d", tab[i].date.mois);
+        scanf ("%d", &tab[i].date.mois);
         printf ("Annee : ");
-        scanf ("%d", tab[i].date.annee);
+        scanf ("%d", &tab[i].date.annee);
         for (j =0; j < 4; j++)
         {
-          printf ("Entrez la note %d de l’étudiant n°%d ", j+1, i+1);
+          printf ("Note %d : ", j+1, i+1);
           scanf ("%f", &tab[i].note[j]);
         }
     }
-    /*printf("Votre date de naissance : \n");
-    printf("day : ");
-    scanf("%d",E[i].date_naissance.jour);
-    printf("mois : ");
-    scanf("%d",E[i].date_naissance.mois);
-    printf("annee : ");
-    scanf("%d",E[i].date_naissance.annee);
-    printf("Vos notes : \n");
-    for(j=0;j<3;j++){
-        printf("Note %d = ",j+1);
-        scanf("%d",E[i].note[j]);
-    }
-    }
-    printf("\n\n ---Bonjour---");
-    for(i=0;i<N;i++){
-    printf("\n--Etudiant %d---",i+1);
-    printf("\nNom : %s",E[i].name);
-    printf("\nAge : %d",E[i].age);
-    printf("\nNiveau : %s",E[i].niveaux);
-    printf("\nDate de naissance : %d/%d/%d",E[i].date_naissance.jour,E.date_naissance.mois,E.date_naissance.annee);
-    printf("\nNotes : ");
-    for(j=0;j<3;j++){
-        printf("\nNote %d = %d ",j+1,E[i].note[j]);
-    }
-    }*/
-}
