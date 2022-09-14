@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define D 50
+#include "function.h"
 
 void main(){
     int j,i,N;
@@ -13,9 +13,9 @@ void main(){
         int age;
         char niveaux [30] ;
         struct Date date; 
-        int note[3];
+        int note[4];
     };
-    struct Etudiant tab [D];
+    struct Etudiant *tab;
     printf("Combien d'etudiant : ");
     scanf("%d",&N);
     for (i = 0; i < N; i++)
@@ -34,7 +34,7 @@ void main(){
         scanf ("%d", &tab[i].date.mois);
         printf ("Annee : ");
         scanf ("%d", &tab[i].date.annee);
-        printf("\nNotes : ");
+        printf("Notes : \n");
         for (j =0; j < 4; j++)
         {
           printf ("Note %d : ", j+1, i+1);
@@ -50,7 +50,7 @@ void main(){
        printf("\nDate de naissance : %d/%d/%d",tab[i].date.jour,tab[i].date.mois,tab[i].date.annee);
        printf("\nNotes : ");
        for(j=0;j<4;j++){
-          printf("\nNotes %d : %d",j+1,(tab+i)->note[j]);
+          printf("\nNote %d : %d",j+1,(tab+i)->note[j]);
        }
     }
 }
