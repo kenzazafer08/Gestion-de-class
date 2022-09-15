@@ -6,6 +6,6 @@ void main(){
     printf("Combien d'etudiant : ");
     scanf("%d",&N);
     struct Etudiant *tab;
-    tab =saisie(tab,N);
-    affichage(tab,N);
+    tab =saisie(&tab,N);
+    affichage(&tab,N);
 }
