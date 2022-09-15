@@ -3,7 +3,7 @@
 
 void main(){
     int j,i,N;
-    printf("Combien d'etudiant : ");
+    printf("Combien d'etudiant : ");    
     scanf("%d",&N);
     struct Etudiant *tab;
     tab =saisie(&tab,N);
