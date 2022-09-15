@@ -39,6 +39,7 @@ struct Etudiant* saisie(struct Etudiant *tab,int N){
     return tab;
 }
 void affichage(struct Etudiant *tab,int N){
+    int i,j;
     printf("----Liste des etudiants----");
     for(i=0;i<N;i++){
        printf("\nEtudiant %d : ",i+1);
