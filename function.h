@@ -42,23 +42,20 @@ struct Etudiant* saisie(struct Etudiant *tab,int N){
     }
     return tab;
 }
-void affichage(struct Etudiant *tab,int N){
-    int i,j;
-    printf("----Liste des etudiants----");
-    for(i=0;i<N;i++){
-       printf("\n\tEtudiant %d : ",i+1);
-       printf("\nNom : %s",(tab+i)->name);
-       printf("\nAge : %d",tab[i].age);
-       printf("\nNiveaux : %s",(tab+i)->niveaux);
-       printf("\nDate de naissance : %d/%d/%d",tab[i].date.jour,tab[i].date.mois,tab[i].date.annee);
+void affichage(struct Etudiant *tab){
+    int j;
+       printf("\nNom : %s",(tab)->name);
+       printf("\nAge : %d",tab->age);
+       printf("\nNiveaux : %s",(tab)->niveaux);
+       printf("\nDate de naissance : %d/%d/%d",tab->date.jour,tab->date.mois,tab->date.annee);
        printf("\nNotes : ");
        for(j=0;j<4;j++){
-          printf("\nNote %d : %d",j+1,(tab+i)->note[j]);
+          printf("\nNote %d : %d",j+1,(tab)->note[j]);
        }
-       if(tab[i].moyenne >= 12){
-          printf("\nMoyenne : %d - Admis",tab[i].moyenne);
-       }else if (tab[i].moyenne > 8 && tab[i].moyenne < 12){
-          printf("\nMoyenne : %d - Redoublons",tab[i].moyenne);
-       }else  printf("\nMoyenne : %d - Exclus",tab[i].moyenne);
-    }
+       if(tab->moyenne >= 12){
+          printf("\nMoyenne : %d - Admis",tab->moyenne);
+       }else if (tab->moyenne > 8 && tab->moyenne < 12){
+          printf("\nMoyenne : %d - Redoublons",tab->moyenne);
+       }else  printf("\nMoyenne : %d - Exclus",tab->moyenne);
+    
 }
