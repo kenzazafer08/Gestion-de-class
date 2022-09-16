@@ -13,7 +13,7 @@ void main(){
     printf("\n---Bonjour---");
     do{
         printf("\nAfficher listes des etudiants : 1");
-        printf("\nTrier la listes des etudiants : 2");
+        printf("\nTrier la listes des etudiants par age : 2");
         printf("\nAfficher la moyenne d'age : 3");
         printf("\nAfficher l'age minimale : 4");
         printf("\nAfficher l'age maximale : 5");
