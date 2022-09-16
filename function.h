@@ -62,12 +62,12 @@ Etudiant* tri(Etudiant *tab,int N){
 void affichage(Etudiant *E,int N){
 int i;
     for(i=0;i<N;i++){
-                 printf("\n\tEtudiant %d: ",i+1);
-                 printf("\nNom : %s",E[i].name);
-                 printf("\nPrenom : %s",E[i].prenom);
-                 printf("\nDate de naissance : %d/%d/%d",E[i].d.jour,E[i].d.mois,E[i].d.annee);
-                 printf("\nAge : %d",E[i].age);
-               }
+        printf("\n\tEtudiant %d: ",i+1);
+        printf("\nNom : %s",E[i].name);
+        printf("\nPrenom : %s",E[i].prenom);
+        printf("\nDate de naissance : %d/%d/%d",E[i].d.jour,E[i].d.mois,E[i].d.annee);
+        printf("\nAge : %d",E[i].age);
+    }
 }
 int moyenneage(Etudiant *E,int N){
         int i,moyenne,somme=0;
