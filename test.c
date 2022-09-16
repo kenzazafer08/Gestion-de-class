@@ -13,7 +13,7 @@
     };
     int age(struct Date date){
      int CD=2022;
-     int age=date.annee-CD;
+     int age=CD-date.annee;
      return age;
     }
     
@@ -23,18 +23,18 @@ void main(){
     printf("\nNom : ");
     scanf("%s",E.name);
     printf("Prenom : ");
-    scanf("%d",E.prenom);
+    scanf("%s",E.prenom);
     printf("Date de naissance : \n");
     printf("Jour : ");
-    printf("%d",&E.d.jour);
+    scanf("%d",&E.d.jour);
     printf("Mois : ");
-    printf("%d",&E.d.mois);
+    scanf("%d",&E.d.mois);
     printf("Annee : ");
-    printf("%d",&E.d.annee);
+    scanf("%d",&E.d.annee);
     E.age=age(E.d);
-    printf("\n\n ---Bonjour---");
+    printf("\n---Bonjour---");
     printf("\nNom : %s",E.name);
-    printf("\nPrenom : %d",E.prenom);
+    printf("\nPrenom : %s",E.prenom);
     printf("\nDate de naissance : %d/%d/%d",E.d.jour,E.d.mois,E.d.annee);
-    printf("\nPrenom : %d",E.prenom);
+    printf("\nAge : %d",E.age);
 }
